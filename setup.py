@@ -1,4 +1,4 @@
-from setuptools import setup
+from setuptools import setup, find_packages
 
 requirements = [
     "numpy",
@@ -11,7 +11,7 @@ setup(
     description="Personal package containing commonly used functions",
     author="Duncan Tilley",
     url="https://github.com/tilleyd/compy",
-    packages=["compy"],
+    packages=find_packages(),
     include_package_data=True,
     install_requires=requirements,
 )
